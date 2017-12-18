@@ -8,6 +8,7 @@ services:
       - 80:80
     volumes:
       - wp_web:/var/www/localhost/htdocs
+      - ./wp-content:/var/www/localhost/htdocs/wp-content
   mysql:
     image: mariadb
     restart: always
