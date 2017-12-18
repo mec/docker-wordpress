@@ -5,7 +5,7 @@ FROM mecrawlings/php:7.1-apache
 WORKDIR /var/www/localhost/htdocs/
 
 # copy kirby
-COPY ./WordPress /var/www/localhost/htdocs/
+COPY ./wordpress /var/www/localhost/htdocs/
 
 # set permissions
 RUN chown -R apache:apache /var/www/localhost/htdocs/

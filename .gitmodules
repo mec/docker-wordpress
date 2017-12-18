@@ -1,6 +1,3 @@
-[submodule "WordPress"]
-	path = WordPress
-	url = https://github.com/WordPress/WordPress
 [submodule "dockerfile-wordpress/wordpress"]
 	path = dockerfile-wordpress/wordpress
 	url = https://github.com/WordPress/WordPress
