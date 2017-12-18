@@ -1,0 +1,21 @@
+version: '2'
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - wp_web:/var/www/localhost/htdocs
+  mysql:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: wordpress
+    volumes:
+      - wp_data:/var/lib/mysql
+volumes:
+  wp_web:
+  wp_data:
